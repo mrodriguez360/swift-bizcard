@@ -17,9 +17,9 @@ const ProfilePanel = ({ name, headline, image, linkedinUrl }: ProfilePanelProps)
           loading="eager"
           className="w-full h-full object-cover block"
         />
-        <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-background/80 to-transparent flex items-center justify-between gap-3">
+        <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-background/95 via-background/60 to-transparent backdrop-blur-sm flex items-center justify-between gap-3">
           {headline ? (
-            <p className="text-sm md:text-base text-muted-foreground line-clamp-1">{headline}</p>
+            <p className="text-sm md:text-base text-foreground line-clamp-1 bg-background/60 rounded px-2 py-1 backdrop-blur-sm">{headline}</p>
           ) : null}
           <Button asChild variant="hero" size="sm" aria-label="Contact on LinkedIn">
             <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
