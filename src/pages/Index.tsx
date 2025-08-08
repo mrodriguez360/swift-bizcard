@@ -3,6 +3,7 @@ import ProfilePanel from "@/components/portfolio/ProfilePanel";
 import CertificationBar from "@/components/portfolio/CertificationBar";
 import ProjectGrid from "@/components/portfolio/ProjectGrid";
 import { portfolio } from "@/content/portfolio";
+import InteractiveBackground from "@/components/InteractiveBackground";
 
 const Index = () => {
   useEffect(() => {
@@ -44,6 +45,7 @@ const Index = () => {
 
   return (
     <main className="min-h-screen overflow-hidden">
+      <InteractiveBackground />
       <section className="container h-screen flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">
           <div className="md:col-span-2">
@@ -55,19 +57,20 @@ const Index = () => {
             />
           </div>
           <article className="md:col-span-3 flex flex-col gap-6 justify-center">
-            <header>
+            <header className="animate-fade-in" style={{ animationDelay: "100ms" }}>
               <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
                 {portfolio.name}
               </h1>
             </header>
-            <CertificationBar certifications={portfolio.certifications} />
-            <section aria-label="Summary" className="w-full">
-              
+            <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
+              <CertificationBar certifications={portfolio.certifications} />
+            </div>
+            <section aria-label="Summary" className="w-full animate-fade-in" style={{ animationDelay: "300ms" }}>
               <p className="mt-3 text-base md:text-lg text-muted-foreground">
                 {portfolio.summary}
               </p>
             </section>
-            <section aria-label="Projects">
+            <section aria-label="Projects" className="animate-fade-in" style={{ animationDelay: "400ms" }}>
               <ProjectGrid projects={portfolio.projects} />
             </section>
           </article>

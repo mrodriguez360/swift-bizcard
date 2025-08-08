@@ -37,7 +37,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
           href={p.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative overflow-hidden rounded-xl ring-1 ring-border/60 bg-card hover:ring-ring transition-all duration-300"
+          className="group relative overflow-hidden rounded-xl ring-1 ring-border/60 bg-card hover:ring-ring transition-all duration-300 shadow-sm hover:shadow-lg"
           style={{ transform: "perspective(700px)" }}
           onMouseMove={onMove}
           onMouseLeave={onLeave}
@@ -47,7 +47,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
             src={p.image}
             alt={`${p.title} project cover`}
             loading="lazy"
-            className="h-36 md:h-40 w-full object-cover"
+            className="h-36 md:h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
           <div className="absolute bottom-0 left-0 right-0 p-3 flex items-end">
