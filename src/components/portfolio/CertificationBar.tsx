@@ -7,7 +7,7 @@ interface CertificationBarProps {
 const CertificationBar = ({ certifications }: CertificationBarProps) => {
   return (
     <nav aria-label="Certifications" className="w-full">
-      <ul className="flex flex-wrap items-center gap-4 md:gap-6">
+      <ul className="flex flex-wrap items-center gap-6 md:gap-8">
         {certifications.map((c) => (
           <li key={c.title}>
             <a
@@ -21,7 +21,7 @@ const CertificationBar = ({ certifications }: CertificationBarProps) => {
                 src={c.image}
                 alt={`${c.title} certification badge`}
                 loading="lazy"
-                className="h-10 w-10 md:h-12 md:w-12 object-contain"
+                className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 object-contain"
               />
             </a>
           </li>
