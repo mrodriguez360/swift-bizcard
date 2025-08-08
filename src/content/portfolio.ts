@@ -23,7 +23,7 @@ export type Project = {
 export const portfolio = {
   name: "Michael Rodriguez",
   headline: "Systems Engineering, Senior Advisor",
-  linkedinUrl: "https://www.linkedin.com/in/your-handle",
+  linkedinUrl: "https://www.linkedin.com/in/mrodriguez360/",
   profileImage: profileImg as string,
   summary:
     "Results-driven AI-Powered Automation Architect with 15+ years of experience revolutionizing enterprise operations through intelligent, data-driven solutions. I specialize in transforming complex operational challenges into scalable AI-enhanced systems that deliver measurable business outcomes.",
