@@ -61,8 +61,9 @@ const Index = () => {
               </h1>
             </header>
             <CertificationBar certifications={portfolio.certifications} />
-            <section aria-label="Experience summary" className="max-w-prose">
-              <p className="text-base md:text-lg text-muted-foreground">
+            <section aria-label="Summary" className="w-full">
+              <h2 className="text-xl md:text-2xl font-semibold tracking-tight border-b border-border pb-2">Summary</h2>
+              <p className="mt-3 text-base md:text-lg text-muted-foreground">
                 {portfolio.summary}
               </p>
             </section>
