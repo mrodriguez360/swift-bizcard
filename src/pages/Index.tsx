@@ -57,7 +57,7 @@ const Index = () => {
           <article className="md:col-span-3 flex flex-col gap-6 justify-center">
             <header>
               <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
-                {portfolio.name} — Recruiter Portfolio
+                {portfolio.name}
               </h1>
             </header>
             <CertificationBar certifications={portfolio.certifications} />
