@@ -21,7 +21,7 @@ const CertificationBar = ({ certifications }: CertificationBarProps) => {
                 src={c.image}
                 alt={`${c.title} certification badge`}
                 loading="lazy"
-                className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 object-contain"
+                className="h-32 w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 object-contain"
               />
             </a>
           </li>
