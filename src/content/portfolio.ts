@@ -35,23 +35,23 @@ export const portfolio = {
   ] as Certification[],
   projects: [
     {
-      title: "Realtime Analytics Dashboard",
-      href: "https://example.com",
+      title: "Unified Monitoring IT Ops and SIEM",
+      href: "https://www.linkedin.com/pulse/driving-innovation-my-role-automation-cybersecurity-michael-rodriguez-fp3ac/",
       image: p1 as string,
     },
     {
-      title: "Cross-Platform Mobile App",
-      href: "https://example.com",
+      title: "Automation Workflows",
+      href: "https://www.linkedin.com/pulse/driving-innovation-my-role-automation-cybersecurity-michael-rodriguez-fp3ac/",
       image: p2 as string,
     },
     {
-      title: "Graph Visualization Engine",
-      href: "https://example.com",
+      title: "Product Requirements Prompt (PRP) AI Chatbot",
+      href: "https://www.linkedin.com/pulse/from-idea-ai-app-zero-friction-michael-rodriguez-lmmoc/",
       image: p3 as string,
     },
     {
-      title: "Cloud Cost Optimizer",
-      href: "https://example.com",
+      title: "Website",
+      href: "https://www.linkedin.com/in/mrodriguez360/details/projects/",
       image: p4 as string,
     },
   ] as Project[],
