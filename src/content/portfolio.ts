@@ -1,7 +1,7 @@
 const profileImg = "/lovable-uploads/2f2799c4-861a-4dc8-b1f8-15c74c8ef72a.png";
 
 
-import certAzure from "@/assets/cert-azure.png";
+
 import certScrum from "@/assets/cert-scrum.png";
 import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
@@ -30,7 +30,7 @@ export const portfolio = {
   certifications: [
     { title: "AWS", href: "https://www.credly.com/badges/ce2a040c-8fe2-4eea-a569-41ff0341df77/public_url", image: "/lovable-uploads/4d25aeeb-6c46-4cf2-9f07-c8c5cb59842f.png" as string },
     { title: "AWS AI Practitioner", href: "https://www.credly.com/badges/be75596a-3e34-4e76-8f21-e8036de94d92/public_url", image: "/lovable-uploads/d2c49c1c-dbe3-4f3e-8938-4caadd91f121.png" as string },
-    { title: "AZURE", href: "https://www.credly.com", image: certAzure as string },
+    { title: "Google Cloud Generative AI Leader", href: "https://www.credly.com/badges/a1fd5a91-51b5-4630-b60e-0f40584189b8/public_url", image: "/lovable-uploads/031b5ec3-66dc-47ca-8b7b-33ca9b63f449.png" as string },
     { title: "SCRUM", href: "https://www.credly.com", image: certScrum as string },
   ] as Certification[],
   projects: [
