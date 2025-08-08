@@ -50,8 +50,8 @@ export const portfolio = {
       image: p3 as string,
     },
     {
-      title: "Website",
-      href: "https://www.linkedin.com/in/mrodriguez360/details/projects/",
+      title: "Code Migration to Modernization\n50x faster delivery",
+      href: "https://www.linkedin.com/pulse/from-prompt-deploy-4-hours-michael-rodriguez-q3t4c/",
       image: p4 as string,
     },
   ] as Project[],
