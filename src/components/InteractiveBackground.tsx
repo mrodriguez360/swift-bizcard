@@ -39,7 +39,7 @@ export default function InteractiveBackground() {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(600px circle at var(--x) var(--y), hsl(var(--primary)/0.12), transparent 40%)",
+            "radial-gradient(600px circle at var(--x) var(--y), hsl(var(--primary)/0.10), transparent 40%)",
         }}
       />
       {/* Soft color wash with slow rotation */}
@@ -47,14 +47,14 @@ export default function InteractiveBackground() {
         className="absolute inset-[-10%] opacity-35 blur-3xl animate-bg-move"
         style={{
           background:
-            "conic-gradient(from 0deg at 50% 50%, hsl(var(--brand)/0.08), hsl(var(--brand-2)/0.08), transparent 35%)",
+            "conic-gradient(from 0deg at 50% 50%, hsl(var(--brand)/0.06), hsl(var(--brand-2)/0.06), transparent 35%)",
         }}
       />
       {/* Parallax dots following cursor subtly */}
       <div
         className="absolute inset-[-15%] opacity-25"
         style={{
-          backgroundImage: "radial-gradient(hsl(var(--foreground)/0.06) 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(hsl(var(--muted-foreground)/0.05) 1px, transparent 1px)",
           backgroundSize: "48px 48px",
           transform: "translate3d(calc((var(--x) - 50%) / 18), calc((var(--y) - 50%) / 18), 0)",
         }}
@@ -64,7 +64,7 @@ export default function InteractiveBackground() {
         className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_45%,transparent_85%)]"
         style={{
           backgroundImage:
-            "linear-gradient(to right, hsl(var(--muted-foreground)/0.06) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--muted-foreground)/0.06) 1px, transparent 1px)",
+            "linear-gradient(to right, hsl(var(--muted-foreground)/0.05) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--muted-foreground)/0.05) 1px, transparent 1px)",
           backgroundSize: "24px 24px",
         }}
       />
