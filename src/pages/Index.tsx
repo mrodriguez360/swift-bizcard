@@ -58,7 +58,7 @@ const Index = () => {
           </div>
           <article className="md:col-span-3 flex flex-col gap-6 justify-center">
             <header className="animate-fade-in" style={{ animationDelay: "100ms" }}>
-              <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
+              <h1 className="text-4xl md:text-6xl font-semibold tracking-tight">
                 {portfolio.name}
               </h1>
             </header>
