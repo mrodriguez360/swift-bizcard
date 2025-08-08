@@ -26,7 +26,7 @@ export const portfolio = {
   linkedinUrl: "https://www.linkedin.com/in/your-handle",
   profileImage: profileImg as string,
   summary:
-    "8+ years building high-impact web platforms across fintech and SaaS. Led cross-functional teams, shipped performant React frontends, and designed robust cloud-native systems on AWS.",
+    "Results-driven AI-Powered Automation Architect with 15+ years of experience revolutionizing enterprise operations through intelligent, data-driven solutions. I specialize in transforming complex operational challenges into scalable AI-enhanced systems that deliver measurable business outcomes.",
   certifications: [
     { title: "AWS", href: "https://www.credly.com", image: certAws as string },
     { title: "PMP", href: "https://www.credly.com", image: certPmp as string },
