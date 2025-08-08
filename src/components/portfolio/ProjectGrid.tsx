@@ -50,15 +50,17 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
             className="h-36 md:h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div
-            className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity backdrop-brightness-105"
             aria-hidden="true"
           >
-            {/* Darken with subtle vertical gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
-            {/* Soft grid pattern for dashboard feel */}
-            <div className="absolute inset-0 mix-blend-overlay [background-image:radial-gradient(hsl(var(--muted-foreground))/0.15_1px,transparent_1px)] [background-size:16px_16px] [background-position:0_0]" />
-            {/* Primary glow at bottom to emulate widget highlights */}
-            <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-primary/25 via-primary/10 to-transparent blur-[2px] mix-blend-screen" />
+            {/* Subtle vertical wash for a clean card feel */}
+            <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-background/10 to-transparent" />
+            {/* Faint grid for structure without heaviness */}
+            <div className="absolute inset-0 opacity-60 [background-image:radial-gradient(hsl(var(--muted-foreground))/0.08_1px,transparent_1px)] [background-size:18px_18px] [background-position:0_0]" />
+            {/* Gentle top sheen */}
+            <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-foreground/5 to-transparent" />
+            {/* Delicate primary glow at the bottom edge */}
+            <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-primary/15 via-primary/5 to-transparent blur-[1.5px] mix-blend-screen" />
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-3 flex items-end">
             <h3 className="text-sm md:text-base font-medium text-foreground shadow-none whitespace-pre-line">
