@@ -103,3 +103,48 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Additional design tokens and component utilities */
+@layer base {
+  :root {
+    --brand: 222 88% 56%;
+    --brand-2: 268 83% 61%;
+    --brand-glow: 222 100% 70%;
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(var(--brand-2)) 100%);
+    --shadow-soft: 0 10px 30px -10px hsl(var(--brand) / 0.25);
+    --shadow-glow: 0 10px 40px -10px hsl(var(--brand-2) / 0.35);
+    --transition-smooth: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dark {
+    --brand: 222 88% 56%;
+    --brand-2: 268 83% 61%;
+    --brand-glow: 222 100% 70%;
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(var(--brand-2)) 100%);
+    --shadow-soft: 0 10px 30px -10px hsl(var(--brand) / 0.25);
+    --shadow-glow: 0 10px 40px -10px hsl(var(--brand-2) / 0.35);
+    --transition-smooth: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer components {
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+  .glass-card {
+    background-color: hsl(var(--card) / 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.2);
+    box-shadow: var(--shadow-soft);
+  }
+  .btn-hero {
+    background-image: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+    border: 1px solid hsl(var(--border) / 0.2);
+    box-shadow: var(--shadow-glow);
+    transition: var(--transition-smooth);
+  }
+  .btn-hero:hover {
+    filter: brightness(1.05);
+  }
+}
