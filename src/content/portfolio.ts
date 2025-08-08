@@ -4,7 +4,7 @@ const profileImg = "/lovable-uploads/2f2799c4-861a-4dc8-b1f8-15c74c8ef72a.png";
 
 
 import p1 from "@/assets/project-1.jpg";
-import p2 from "@/assets/project-2.jpg";
+
 import p3 from "@/assets/project-3.jpg";
 import p4 from "@/assets/project-4.jpg";
 
@@ -42,7 +42,7 @@ export const portfolio = {
     {
       title: "Automation Workflows",
       href: "https://www.linkedin.com/pulse/driving-innovation-my-role-automation-cybersecurity-michael-rodriguez-fp3ac/",
-      image: p2 as string,
+      image: "/lovable-uploads/34ad4660-8ef1-4c70-bdce-37773f41ffca.png" as string,
     },
     {
       title: "Product Requirements Prompt (PRP) AI Chatbot",
