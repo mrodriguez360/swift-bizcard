@@ -33,21 +33,30 @@ export default function InteractiveBackground() {
       className="pointer-events-none fixed inset-0 -z-10 [--x:50%] [--y:50%] overflow-hidden"
     >
       {/* Base gradient for depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/92 to-background/88" />
       {/* Cursor-following spotlight */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(600px circle at var(--x) var(--y), hsl(var(--primary)/0.15), transparent 40%)",
+            "radial-gradient(600px circle at var(--x) var(--y), hsl(var(--primary)/0.12), transparent 40%)",
         }}
       />
-      {/* Soft color wash */}
+      {/* Soft color wash with slow rotation */}
       <div
-        className="absolute inset-[-10%] opacity-30 blur-3xl"
+        className="absolute inset-[-10%] opacity-35 blur-3xl animate-bg-move"
         style={{
           background:
-            "conic-gradient(from 180deg at 50% 50%, hsl(var(--primary)/0.08), hsl(var(--accent)/0.08), transparent 30%)",
+            "conic-gradient(from 0deg at 50% 50%, hsl(var(--brand)/0.08), hsl(var(--brand-2)/0.08), transparent 35%)",
+        }}
+      />
+      {/* Parallax dots following cursor subtly */}
+      <div
+        className="absolute inset-[-15%] opacity-25"
+        style={{
+          backgroundImage: "radial-gradient(hsl(var(--foreground)/0.06) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+          transform: "translate3d(calc((var(--x) - 50%) / 18), calc((var(--y) - 50%) / 18), 0)",
         }}
       />
       {/* Faint grid texture */}
@@ -55,7 +64,7 @@ export default function InteractiveBackground() {
         className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_45%,transparent_85%)]"
         style={{
           backgroundImage:
-            "linear-gradient(to right, rgba(120,119,198,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(120,119,198,0.05) 1px, transparent 1px)",
+            "linear-gradient(to right, hsl(var(--muted-foreground)/0.06) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--muted-foreground)/0.06) 1px, transparent 1px)",
           backgroundSize: "24px 24px",
         }}
       />
