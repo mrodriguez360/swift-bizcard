@@ -1,4 +1,4 @@
-import profileImg from "@/assets/profile-portrait.jpg";
+const profileImg = "/lovable-uploads/2f2799c4-861a-4dc8-b1f8-15c74c8ef72a.png";
 import certAws from "@/assets/cert-aws.png";
 import certPmp from "@/assets/cert-pmp.png";
 import certAzure from "@/assets/cert-azure.png";
