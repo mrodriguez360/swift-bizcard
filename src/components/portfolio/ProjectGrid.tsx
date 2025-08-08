@@ -51,7 +51,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
           <div className="absolute bottom-0 left-0 right-0 p-3 flex items-end">
-            <h3 className="text-sm md:text-base font-medium text-foreground shadow-none">
+            <h3 className="text-sm md:text-base font-medium text-foreground shadow-none whitespace-pre-line">
               {p.title}
             </h3>
           </div>
