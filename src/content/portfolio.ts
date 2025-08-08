@@ -21,7 +21,7 @@ export type Project = {
 };
 
 export const portfolio = {
-  name: "Alex Morgan",
+  name: "Michael Rodriguez",
   headline: "Senior Software Engineer",
   linkedinUrl: "https://www.linkedin.com/in/your-handle",
   profileImage: profileImg as string,
