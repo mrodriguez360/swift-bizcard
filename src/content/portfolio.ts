@@ -35,17 +35,17 @@ export const portfolio = {
   ] as Certification[],
   projects: [
     {
-      title: "Unified Monitoring IT Ops and SIEM",
+      title: "Unified Monitoring IT Ops and SIEM\nMonitors 2 data centers for 10+ years",
       href: "https://www.linkedin.com/pulse/driving-innovation-my-role-automation-cybersecurity-michael-rodriguez-fp3ac/",
       image: p1 as string,
     },
     {
-      title: "Automation Workflows",
+      title: "IT Operations and Cybersecurity Automation Workflows\n24/7 automation equal to 6 FTEs",
       href: "https://www.linkedin.com/pulse/driving-innovation-my-role-automation-cybersecurity-michael-rodriguez-fp3ac/",
       image: "/lovable-uploads/34ad4660-8ef1-4c70-bdce-37773f41ffca.png" as string,
     },
     {
-      title: "Product Requirements Prompt (PRP) AI Chatbot",
+      title: "Product Requirements Prompt (PRP) AI Chatbot\nAccelerating AI Pipelines",
       href: "https://www.linkedin.com/pulse/from-idea-ai-app-zero-friction-michael-rodriguez-lmmoc/",
       image: p3 as string,
     },
