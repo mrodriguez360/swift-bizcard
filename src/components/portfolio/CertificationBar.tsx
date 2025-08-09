@@ -18,7 +18,7 @@ const CertificationBar = ({ certifications }: CertificationBarProps) => {
                     href={c.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block rounded-md p-1 bg-card/60 backdrop-blur transition-all duration-300 ring-1 ring-border/60 hover:ring-ring/40 shadow-sm hover:shadow-md hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    className="block rounded-md p-1 transition-transform duration-300 hover:scale-[1.03] focus-visible:outline-none"
                     aria-label={`${c.title} certification (opens external)`}
                   >
                     <img
