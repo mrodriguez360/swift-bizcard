@@ -10,7 +10,7 @@ interface ProfilePanelProps {
 
 const ProfilePanel = ({ name, headline, image, linkedinUrl }: ProfilePanelProps) => {
   return (
-      <aside className="rounded-xl overflow-hidden h-64 md:h-full relative p-0 bg-card">
+      <aside className="glass-card rounded-xl overflow-hidden h-64 md:h-full relative p-0">
         <img
           src={image}
           alt={`${name} profile portrait`}
