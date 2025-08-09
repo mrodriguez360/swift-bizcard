@@ -7,7 +7,7 @@ import InteractiveBackground from "@/components/InteractiveBackground";
 
 const Index = () => {
   useEffect(() => {
-    const title = `${portfolio.name} — One-Page Recruiter Portfolio`;
+    const title = `${portfolio.name}`;
     const description = `${portfolio.name}: concise portfolio with certifications and projects for quick recruiter review.`;
     document.title = title;
     const metaDesc = document.querySelector('meta[name="description"]');
@@ -44,9 +44,9 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-hidden">
       <InteractiveBackground />
-      <section className="container min-h-screen md:h-screen flex items-center py-8">
+      <section className="container h-screen flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">
           <div className="md:col-span-2">
             <ProfilePanel
