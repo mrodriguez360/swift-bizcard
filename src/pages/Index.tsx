@@ -44,9 +44,9 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen overflow-hidden">
+    <main className="min-h-screen overflow-x-hidden">
       <InteractiveBackground />
-      <section className="container h-screen flex items-center">
+      <section className="container min-h-screen md:h-screen flex items-center py-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">
           <div className="md:col-span-2">
             <ProfilePanel
