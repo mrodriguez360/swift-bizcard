@@ -15,7 +15,7 @@ const ProfilePanel = ({ name, headline, image, linkedinUrl }: ProfilePanelProps)
           src={image}
           alt={`${name} profile portrait`}
           loading="eager"
-          className="w-full h-full object-contain block bg-background"
+          className="w-full h-full object-cover object-center block"
         />
         <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-background/95 via-background/60 to-transparent backdrop-blur-sm flex items-center justify-between gap-3">
           {headline ? (
