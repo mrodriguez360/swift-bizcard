@@ -6,7 +6,7 @@ const profileImg = "/lovable-uploads/2f2799c4-861a-4dc8-b1f8-15c74c8ef72a.png";
 import p1 from "@/assets/project-1.jpg";
 
 import p3 from "@/assets/project-3.jpg";
-import p4 from "@/assets/project-4.jpg";
+
 
 export type Certification = {
   title: string;
@@ -52,7 +52,7 @@ export const portfolio = {
     {
       title: "Code Migration to Modernization\n50x faster delivery",
       href: "https://www.linkedin.com/pulse/from-prompt-deploy-4-hours-michael-rodriguez-q3t4c/",
-      image: p4 as string,
+      image: "/lovable-uploads/17b77024-1a99-43f6-877a-87335f961557.png" as string,
     },
   ] as Project[],
 };
