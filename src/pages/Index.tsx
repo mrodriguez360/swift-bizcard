@@ -45,7 +45,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-gradient-primary flex items-center justify-center" style={{ ["--gradient-primary" as any]: "linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(234 85% 40%) 100%)" }}>
+    <main className="min-h-screen overflow-x-hidden bg-gradient-primary flex items-center justify-center">
       <div className="w-full px-4 py-10">
         <Card className="mx-auto max-w-screen-2xl rounded-2xl glass-card shadow-[0_20px_60px_-20px_hsl(var(--brand)/0.35)] bg-[hsl(var(--card-hero))] text-[hsl(var(--card-hero-foreground))] border-[hsl(var(--border-hero))]">
           <section className="p-6 md:p-10">
@@ -61,7 +61,7 @@ const Index = () => {
               <article className="md:col-span-3 flex flex-col gap-6 justify-start">
                 <header className="animate-fade-in" style={{ animationDelay: "100ms" }}>
                   <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-foreground">
-                    <Typewriter text="Howdy, I'm, Michael Rodriguez!" />
+                    <Typewriter text="Howdy, I'm Michael Rodriguez!" />
                   </h1>
                 </header>
                 <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
