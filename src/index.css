@@ -134,13 +134,6 @@ All colors MUST be HSL.
   .bg-gradient-primary {
     background-image: var(--gradient-primary);
   }
-  .glass-card {
-    background-color: hsl(var(--card) / 0.6);
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsl(var(--border) / 0.2);
-    box-shadow: var(--shadow-soft);
-  }
   .btn-hero {
     background-image: var(--gradient-primary);
     color: hsl(var(--primary-foreground));
@@ -163,4 +156,13 @@ All colors MUST be HSL.
     100% { transform: translate3d(40px, 20px, 0); }
   }
   .dots-parallax { animation: dots-pan 30s linear infinite; }
+}
+
+@layer utilities {
+  .glass-card {
+    background-color: hsl(var(--card) / 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-color: hsl(var(--border) / 0.2);
+  }
 }
