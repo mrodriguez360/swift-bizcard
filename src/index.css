@@ -38,6 +38,11 @@ All colors MUST be HSL.
 
     --radius: 1rem;
 
+    /* Static hero card tokens */
+    --card-hero: 0 0% 100%;
+    --card-hero-foreground: 222 47% 11%;
+    --border-hero: 215 20% 90%;
+
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 222 47% 12%;
     --sidebar-primary: 221 61% 40%;
@@ -76,6 +81,12 @@ All colors MUST be HSL.
     --border: 223 30% 18%;
     --input: 223 30% 18%;
     --ring: 234 86% 62%;
+
+    /* Static hero card tokens (dark keeps them light) */
+    --card-hero: 0 0% 100%;
+    --card-hero-foreground: 222 47% 11%;
+    --border-hero: 215 20% 90%;
+
     --sidebar-background: 223 40% 6%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 220 88% 60%;
