@@ -5,7 +5,7 @@ const profileImg = "/lovable-uploads/2f2799c4-861a-4dc8-b1f8-15c74c8ef72a.png";
 
 import p1 from "@/assets/project-1.jpg";
 
-import p3 from "@/assets/project-3.jpg";
+
 
 
 export type Certification = {
@@ -47,7 +47,7 @@ export const portfolio = {
     {
       title: "Product Requirements Prompt (PRP) AI Chatbot\nAccelerating AI Pipelines",
       href: "https://www.linkedin.com/pulse/from-idea-ai-app-zero-friction-michael-rodriguez-lmmoc/",
-      image: p3 as string,
+      image: "/lovable-uploads/587f79bb-6f94-43dd-96c0-2cd5a3d3584e.png" as string,
     },
     {
       title: "Code Migration to Modernization\n50x faster delivery",
