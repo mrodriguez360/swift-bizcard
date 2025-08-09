@@ -35,7 +35,7 @@ const Typewriter = ({ text, speed = 60, className }: TypewriterProps) => {
         <span
           aria-hidden="true"
           className={cn(
-            "absolute left-full top-0 w-[2px] h-[1em] bg-foreground transition-opacity duration-150",
+            "absolute left-full top-0 w-[2px] h-[1em] bg-[hsl(var(--card-hero-foreground))] transition-opacity duration-150",
             cursorVisible ? "opacity-100" : "opacity-0"
           )}
         />
