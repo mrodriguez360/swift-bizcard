@@ -47,7 +47,7 @@ const Index = () => {
   return (
     <main className="min-h-screen overflow-x-hidden bg-gradient-primary flex items-center justify-center" style={{ ["--gradient-primary" as any]: "linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(234 85% 40%) 100%)" }}>
       <div className="w-full px-4 py-10">
-        <Card className="mx-auto max-w-screen-2xl rounded-2xl shadow-[var(--shadow-soft)] bg-[hsl(var(--card-hero))] text-[hsl(var(--card-hero-foreground))] border-[hsl(var(--border-hero))]">
+        <Card className="mx-auto max-w-screen-2xl rounded-2xl glass-card shadow-[var(--shadow-glow)]">
           <section className="p-6 md:p-10">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">
               <div className="md:col-span-2">
