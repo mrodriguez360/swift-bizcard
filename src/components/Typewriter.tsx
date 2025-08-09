@@ -30,14 +30,16 @@ const Typewriter = ({ text, speed = 60, className }: TypewriterProps) => {
 
   return (
     <span className={cn("inline-flex items-center whitespace-pre-wrap", className)} aria-label={text}>
-      <span>{display}</span>
-      <span
-        aria-hidden="true"
-        className={cn(
-          "inline-block w-[2px] h-[1em] bg-foreground transition-opacity duration-150",
-          cursorVisible ? "opacity-100" : "opacity-0"
-        )}
-      />
+      <span className="relative inline-block align-bottom">
+        <span>{display}</span>
+        <span
+          aria-hidden="true"
+          className={cn(
+            "absolute left-full top-0 w-[2px] h-[1em] bg-foreground transition-opacity duration-150",
+            cursorVisible ? "opacity-100" : "opacity-0"
+          )}
+        />
+      </span>
     </span>
   );
 };
