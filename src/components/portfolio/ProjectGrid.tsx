@@ -63,7 +63,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
             <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-primary/15 via-primary/5 to-transparent blur-[1.5px] mix-blend-screen" />
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-3 flex items-end">
-            <h3 className="text-sm md:text-base font-medium text-foreground shadow-none whitespace-pre-line">
+            <h3 className="text-sm md:text-base font-medium text-foreground shadow-none whitespace-pre-line bg-background/60 rounded px-2 py-1 backdrop-blur-sm">
               {p.title}
             </h3>
           </div>
