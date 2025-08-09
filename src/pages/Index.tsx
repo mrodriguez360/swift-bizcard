@@ -47,7 +47,7 @@ const Index = () => {
   return (
     <main className="min-h-screen overflow-x-hidden bg-gradient-primary flex items-center justify-center">
       <div className="w-full px-4 py-10">
-        <Card className="mx-auto max-w-[1400px] rounded-2xl shadow-[var(--shadow-soft)] bg-[hsl(var(--card-hero))] text-[hsl(var(--card-hero-foreground))] border-[hsl(var(--border-hero))]">
+        <Card className="mx-auto max-w-screen-2xl rounded-2xl shadow-[var(--shadow-soft)] bg-[hsl(var(--card-hero))] text-[hsl(var(--card-hero-foreground))] border-[hsl(var(--border-hero))]">
           <section className="p-6 md:p-10">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">
               <div className="md:col-span-2">
