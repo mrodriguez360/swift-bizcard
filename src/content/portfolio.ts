@@ -42,7 +42,7 @@ export const portfolio = {
     {
       title: "IT Operations and Cybersecurity Automation Workflows\n24/7 automation equal to 6 FTEs",
       href: "https://www.linkedin.com/pulse/driving-innovation-my-role-automation-cybersecurity-michael-rodriguez-fp3ac/",
-      image: "/lovable-uploads/34ad4660-8ef1-4c70-bdce-37773f41ffca.png" as string,
+      image: "/lovable-uploads/69bb36fd-7248-4c40-ba5c-3ce49aa4fa14.png" as string,
     },
     {
       title: "Product Requirements Prompt (PRP) AI Chatbot\nAccelerating AI Pipelines",
