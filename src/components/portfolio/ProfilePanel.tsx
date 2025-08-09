@@ -17,6 +17,11 @@ const ProfilePanel = ({ name, headline, image, linkedinUrl }: ProfilePanelProps)
           loading="eager"
           className="w-full h-full object-cover object-center block"
         />
+        <div className="absolute inset-x-0 top-0 p-4 flex items-start justify-between">
+          <h2 className="text-base md:text-lg font-semibold text-foreground bg-background/70 rounded px-2 py-1 backdrop-blur-sm line-clamp-1">
+            {name}
+          </h2>
+        </div>
         <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-background/95 via-background/60 to-transparent backdrop-blur-sm flex items-center justify-between gap-3">
           {headline ? (
             <p className="text-sm md:text-base text-foreground line-clamp-1 bg-background/60 rounded px-2 py-1 backdrop-blur-sm">{headline}</p>
