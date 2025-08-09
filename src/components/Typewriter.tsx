@@ -30,7 +30,7 @@ const Typewriter = ({ text, speed = 60, className }: TypewriterProps) => {
 
   return (
     <span className={cn("inline-flex items-center whitespace-pre-wrap", className)} aria-label={text}>
-      <span className="relative inline-block align-bottom text-[hsl(var(--card-hero-foreground))]">
+      <span className="relative inline-block align-bottom text-[hsl(var(--card-hero-foreground))] whitespace-nowrap">
         <span>{display}</span>
         <span
           aria-hidden="true"
