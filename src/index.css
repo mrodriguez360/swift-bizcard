@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 221 61% 40%;
+    --primary: 234 82% 48%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 20% 96%;
@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 215 23% 94%;
     --muted-foreground: 220 15% 40%;
 
-    --accent: 205 100% 96%;
+    --accent: 248 100% 97%;
     --accent-foreground: 222 47% 11%;
 
     --destructive: 0 84% 60%;
@@ -34,9 +34,9 @@ All colors MUST be HSL.
 
     --border: 215 20% 90%;
     --input: 215 20% 90%;
-    --ring: 221 61% 40%;
+    --ring: 234 82% 48%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 222 47% 12%;
@@ -58,7 +58,7 @@ All colors MUST be HSL.
     --popover: 223 40% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 220 88% 60%;
+    --primary: 234 86% 62%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 35% 16%;
@@ -67,7 +67,7 @@ All colors MUST be HSL.
     --muted: 223 30% 18%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 220 45% 22%;
+    --accent: 262 45% 22%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -75,7 +75,7 @@ All colors MUST be HSL.
 
     --border: 223 30% 18%;
     --input: 223 30% 18%;
-    --ring: 220 88% 60%;
+    --ring: 234 86% 62%;
     --sidebar-background: 223 40% 6%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 220 88% 60%;
@@ -100,18 +100,18 @@ All colors MUST be HSL.
 /* Additional design tokens and component utilities */
 @layer base {
   :root {
-    --brand: 221 70% 56%;
-    --brand-2: 199 70% 52%;
-    --brand-glow: 221 85% 70%;
+    --brand: 234 85% 64%;
+    --brand-2: 266 70% 62%;
+    --brand-glow: 234 90% 72%;
     --gradient-primary: linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(var(--brand-2)) 100%);
     --shadow-soft: 0 10px 30px -10px hsl(var(--brand) / 0.18);
     --shadow-glow: 0 10px 40px -10px hsl(var(--brand-2) / 0.25);
     --transition-smooth: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .dark {
-    --brand: 220 85% 62%;
-    --brand-2: 234 75% 58%;
-    --brand-glow: 220 90% 70%;
+    --brand: 234 85% 62%;
+    --brand-2: 266 70% 60%;
+    --brand-glow: 234 90% 72%;
     --gradient-primary: linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(var(--brand-2)) 100%);
     --shadow-soft: 0 10px 30px -10px hsl(var(--brand) / 0.18);
     --shadow-glow: 0 10px 40px -10px hsl(var(--brand-2) / 0.25);

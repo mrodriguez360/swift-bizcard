@@ -3,7 +3,7 @@ import ProfilePanel from "@/components/portfolio/ProfilePanel";
 import CertificationBar from "@/components/portfolio/CertificationBar";
 import ProjectGrid from "@/components/portfolio/ProjectGrid";
 import { portfolio } from "@/content/portfolio";
-import InteractiveBackground from "@/components/InteractiveBackground";
+import { Card } from "@/components/ui/card";
 import Typewriter from "@/components/Typewriter";
 
 const Index = () => {
@@ -45,38 +45,41 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen overflow-x-hidden">
-      <InteractiveBackground />
-      <section className="container min-h-screen md:h-screen flex items-center py-6">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">
-          <div className="md:col-span-2">
-            <ProfilePanel
-              name={portfolio.name}
-              headline={portfolio.headline}
-              image={portfolio.profileImage}
-              linkedinUrl={portfolio.linkedinUrl}
-            />
-          </div>
-          <article className="md:col-span-3 flex flex-col gap-6 justify-center">
-            <header className="animate-fade-in" style={{ animationDelay: "100ms" }}>
-              <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-foreground">
-                <Typewriter text="I create decision making & automation" />
-              </h1>
-            </header>
-            <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
-              <CertificationBar certifications={portfolio.certifications} />
+    <main className="min-h-screen overflow-x-hidden bg-gradient-primary flex items-center justify-center">
+      <div className="w-full px-4 py-10">
+        <Card className="mx-auto max-w-[1100px] rounded-2xl shadow-[var(--shadow-soft)]">
+          <section className="p-6 md:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">
+              <div className="md:col-span-2">
+                <ProfilePanel
+                  name={portfolio.name}
+                  headline={portfolio.headline}
+                  image={portfolio.profileImage}
+                  linkedinUrl={portfolio.linkedinUrl}
+                />
+              </div>
+              <article className="md:col-span-3 flex flex-col gap-6 justify-center">
+                <header className="animate-fade-in" style={{ animationDelay: "100ms" }}>
+                  <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-foreground">
+                    <Typewriter text="I create decision making & automation" />
+                  </h1>
+                </header>
+                <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
+                  <CertificationBar certifications={portfolio.certifications} />
+                </div>
+                <section aria-label="Summary" className="w-full animate-fade-in" style={{ animationDelay: "300ms" }}>
+                  <p className="mt-3 text-base md:text-lg text-muted-foreground">
+                    {portfolio.summary}
+                  </p>
+                </section>
+                <section aria-label="Projects" className="animate-fade-in" style={{ animationDelay: "400ms" }}>
+                  <ProjectGrid projects={portfolio.projects} />
+                </section>
+              </article>
             </div>
-            <section aria-label="Summary" className="w-full animate-fade-in" style={{ animationDelay: "300ms" }}>
-              <p className="mt-3 text-base md:text-lg text-muted-foreground">
-                {portfolio.summary}
-              </p>
-            </section>
-            <section aria-label="Projects" className="animate-fade-in" style={{ animationDelay: "400ms" }}>
-              <ProjectGrid projects={portfolio.projects} />
-            </section>
-          </article>
-        </div>
-      </section>
+          </section>
+        </Card>
+      </div>
     </main>
   );
 };
