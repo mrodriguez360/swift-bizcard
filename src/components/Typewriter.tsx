@@ -34,7 +34,7 @@ const Typewriter = ({ text, speed = 60, className }: TypewriterProps) => {
       <span
         aria-hidden="true"
         className={cn(
-          "ml-1 w-[2px] h-[1em] bg-foreground transition-opacity duration-150",
+          "inline-block w-[2px] h-[1em] bg-foreground transition-opacity duration-150",
           cursorVisible ? "opacity-100" : "opacity-0"
         )}
       />
