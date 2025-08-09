@@ -35,22 +35,22 @@ export const portfolio = {
   ] as Certification[],
   projects: [
     {
-      title: "Unified Monitoring IT Ops and SIEM\nMonitors 2 data centers for 10+ years",
+      title: "Unified Monitoring IT Ops and SIEM:\nMonitors 2 data centers for 10+ years",
       href: "https://www.linkedin.com/pulse/driving-innovation-my-role-automation-cybersecurity-michael-rodriguez-fp3ac/",
       image: p1 as string,
     },
     {
-      title: "IT Operations and Cybersecurity Automation Workflows\n24/7 automation equal to 6 FTEs",
+      title: "IT Operations and Cybersecurity Automation Workflows:\n24/7 automation equal to 6 FTEs",
       href: "https://www.linkedin.com/pulse/driving-innovation-my-role-automation-cybersecurity-michael-rodriguez-fp3ac/",
       image: "/lovable-uploads/69bb36fd-7248-4c40-ba5c-3ce49aa4fa14.png" as string,
     },
     {
-      title: "Product Requirements Prompt (PRP) AI Chatbot\nAccelerating AI Pipelines",
+      title: "Product Requirements Prompt (PRP) AI Chatbot:\nAccelerating AI Pipelines",
       href: "https://www.linkedin.com/pulse/from-idea-ai-app-zero-friction-michael-rodriguez-lmmoc/",
       image: "/lovable-uploads/587f79bb-6f94-43dd-96c0-2cd5a3d3584e.png" as string,
     },
     {
-      title: "Code Migration to Modernization\n50x faster delivery",
+      title: "Code Migration to Modernization:\n50x faster delivery",
       href: "https://www.linkedin.com/pulse/from-prompt-deploy-4-hours-michael-rodriguez-q3t4c/",
       image: "/lovable-uploads/17b77024-1a99-43f6-877a-87335f961557.png" as string,
     },
