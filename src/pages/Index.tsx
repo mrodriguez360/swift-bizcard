@@ -61,7 +61,7 @@ const Index = () => {
               <article className="md:col-span-3 flex flex-col gap-6 justify-center">
                 <header className="animate-fade-in" style={{ animationDelay: "100ms" }}>
                   <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-foreground">
-                    <Typewriter text="I create decision making & automation" />
+                    <Typewriter text="Howdy, I'm, Michael Rodriguez!" />
                   </h1>
                 </header>
                 <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
