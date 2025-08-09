@@ -58,7 +58,7 @@ const Index = () => {
                   linkedinUrl={portfolio.linkedinUrl}
                 />
               </div>
-              <article className="md:col-span-3 flex flex-col gap-6 justify-center">
+              <article className="md:col-span-3 flex flex-col gap-6 justify-start">
                 <header className="animate-fade-in" style={{ animationDelay: "100ms" }}>
                   <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-foreground">
                     <Typewriter text="Howdy, I'm, Michael Rodriguez!" />
