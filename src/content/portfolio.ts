@@ -1,4 +1,4 @@
-const profileImg = "/lovable-uploads/2f2799c4-861a-4dc8-b1f8-15c74c8ef72a.png";
+const profileImg = "/lovable-uploads/d1db9f50-d1eb-4aaf-80e1-b0347aae574c.png";
 
 
 
