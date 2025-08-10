@@ -65,7 +65,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                   src={p.image}
                   alt={`${p.title} project cover`}
                   loading="lazy"
-                  className="w-full aspect-[16/9] object-cover filter grayscale contrast-110 brightness-90 saturate-0"
+                  className="w-full aspect-[16/9] object-cover filter grayscale contrast-110 brightness-90 saturate-0 opacity-20"
                 />
                 <div
                   className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-foreground/10 to-transparent"
