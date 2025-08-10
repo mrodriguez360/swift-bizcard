@@ -46,9 +46,9 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-[hsl(var(--ai-bg))] flex items-center justify-center">
+    <main className="relative min-h-screen overflow-x-hidden bg-[hsl(var(--ai-bg))] flex items-center justify-center">
       <InteractiveBackground />
-      <div className="w-full px-4 py-10">
+      <div className="relative z-10 w-full px-4 py-10">
         <Card className="mx-auto max-w-screen-2xl rounded-2xl glass-card shadow-[0_20px_60px_-20px_hsl(var(--brand)/0.35)] bg-[hsl(var(--card-hero))] text-[hsl(var(--card-hero-foreground))] border-[hsl(var(--border-hero))]">
           <section className="p-6 md:p-10">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">

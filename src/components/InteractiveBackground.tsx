@@ -1,6 +1,6 @@
 export default function InteractiveBackground() {
   return (
-    <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10">
+    <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0">
       {/* Solid black base using design token */}
       <div
         className="absolute inset-0"
@@ -14,7 +14,7 @@ export default function InteractiveBackground() {
         className="absolute inset-0 opacity-90"
         style={{
           backgroundImage:
-            "url(/lovable-uploads/c8b47b18-9377-4631-980a-a74981031dab.png)",
+            "url(/lovable-uploads/69a6d39b-bf7c-4340-9bae-9640937e7e8b.png)",
           backgroundRepeat: "repeat",
           backgroundPosition: "top left",
           backgroundSize: "auto",
