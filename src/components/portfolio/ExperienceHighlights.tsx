@@ -16,7 +16,7 @@ const items: ExperienceItem[] = [
 const ExperienceHighlights: React.FC = () => {
   return (
     <nav aria-label="Experience highlights" className="w-full">
-      <ul className="flex flex-wrap items-center gap-3 md:gap-4">
+      <ul className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
         {items.map((it, idx) => (
           <React.Fragment key={it.area}>
             <li
