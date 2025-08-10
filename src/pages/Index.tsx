@@ -4,7 +4,7 @@ import CertificationBar from "@/components/portfolio/CertificationBar";
 import ProjectGrid from "@/components/portfolio/ProjectGrid";
 import { portfolio } from "@/content/portfolio";
 import { Card } from "@/components/ui/card";
-import Typewriter from "@/components/Typewriter";
+
 import InteractiveBackground from "@/components/InteractiveBackground";
 
 const Index = () => {
@@ -49,6 +49,10 @@ const Index = () => {
     <main className="relative min-h-screen overflow-x-hidden bg-[hsl(var(--ai-bg))] flex items-center justify-center">
       <InteractiveBackground />
       <div className="relative z-10 w-full px-4 py-10">
+        <header className="mx-auto max-w-screen-2xl text-center mb-6 md:mb-8 animate-fade-in" style={{ animationDelay: "60ms" }}>
+          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-foreground">{portfolio.name}</h1>
+          <p className="mt-2 text-base md:text-lg text-muted-foreground">{portfolio.headline}</p>
+        </header>
         <Card className="mx-auto max-w-screen-2xl rounded-2xl glass-card shadow-[0_20px_60px_-20px_hsl(var(--brand)/0.35)] bg-[hsl(var(--card-hero))] text-[hsl(var(--card-hero-foreground))] border-[hsl(var(--border-hero))]">
           <section className="p-6 md:p-10">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">
@@ -61,11 +65,6 @@ const Index = () => {
                 />
               </div>
               <article className="md:col-span-3 flex flex-col gap-6 justify-start">
-                <header className="animate-fade-in" style={{ animationDelay: "100ms" }}>
-                  <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-foreground">
-                    <Typewriter text="Howdy, I'm Michael Rodriguez!" />
-                  </h1>
-                </header>
                 <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
                   <CertificationBar certifications={portfolio.certifications} />
                 </div>
