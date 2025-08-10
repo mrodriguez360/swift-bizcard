@@ -74,13 +74,13 @@ const Index = () => {
                     {portfolio.summary}
                   </p>
                 </section>
-                <section aria-label="Projects" className="animate-fade-in" style={{ animationDelay: "400ms" }}>
-                  <ProjectGrid projects={portfolio.projects} />
-                </section>
               </article>
             </div>
           </section>
         </Card>
+        <section aria-label="Projects" className="mx-auto max-w-screen-2xl mt-8 animate-fade-in" style={{ animationDelay: "400ms" }}>
+          <ProjectGrid projects={portfolio.projects} />
+        </section>
       </div>
     </main>
   );
