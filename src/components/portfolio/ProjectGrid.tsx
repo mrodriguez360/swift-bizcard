@@ -19,7 +19,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
     const rect = el.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    const rotateY = ((x / rect.width) - 0.5) * 6;
+    const rotateY = (x / rect.width - 0.5) * 6;
     const rotateX = -((y / rect.height) - 0.5) * 6;
     el.style.transform = `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
   };
@@ -51,7 +51,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                 <span className="inline-flex size-6 md:size-7 items-center justify-center rounded-md border border-border/60 bg-background/30">
                   <Compass className="size-3.5 md:size-4" aria-hidden="true" />
                 </span>
-                <span className="text-xs md:text-sm font-medium tracking-wide">Discover</span>
+                <span className="text-xs md:text-sm font-medium tracking-wide">{titleLine}</span>
               </div>
               <h3 className="mt-2 text-xs md:text-sm font-medium text-foreground/80">{titleLine}</h3>
               {subLine && (
@@ -68,7 +68,10 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                   loading="lazy"
                   className="w-full aspect-[16/9] object-cover filter grayscale contrast-110 brightness-90 saturate-0"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-foreground/10 to-transparent" aria-hidden="true" />
+                <div
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-foreground/10 to-transparent"
+                  aria-hidden="true"
+                />
               </div>
             </div>
           </a>
