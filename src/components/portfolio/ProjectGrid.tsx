@@ -53,7 +53,6 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                 </span>
                 <span className="text-xs md:text-sm font-medium tracking-wide">{titleLine}</span>
               </div>
-              <h3 className="mt-2 text-xs md:text-sm font-medium text-foreground/80">{titleLine}</h3>
               {subLine && (
                 <p className="text-lg md:text-2xl font-semibold leading-snug text-foreground">
                   {subLine}
