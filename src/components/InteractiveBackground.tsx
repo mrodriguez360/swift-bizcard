@@ -1,71 +1,64 @@
-import { useEffect, useRef } from "react";
-
-const supportsMotion = () =>
-  typeof window !== "undefined" &&
-  !window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+import { useMemo } from "react";
 
 export default function InteractiveBackground() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el || !supportsMotion()) return;
-    let rafId = 0;
-    const onMove = (e: MouseEvent) => {
-      rafId = window.requestAnimationFrame(() => {
-        const x = (e.clientX / window.innerWidth) * 100;
-        const y = (e.clientY / window.innerHeight) * 100;
-        el.style.setProperty("--x", `${x}%`);
-        el.style.setProperty("--y", `${y}%`);
-      });
-    };
-    window.addEventListener("mousemove", onMove);
-    return () => {
-      window.removeEventListener("mousemove", onMove);
-      cancelAnimationFrame(rafId);
-    };
-  }, []);
+  // Generate a set of subtle highlighted cells (AI Studio–style)
+  const cells = useMemo(
+    () =>
+      Array.from({ length: 48 }).map((_, i) => ({
+        id: i,
+        left: Math.random() * 100,
+        top: Math.random() * 100,
+        size: 8 + Math.random() * 10, // 8px - 18px
+        delay: Math.random() * 4, // 0s - 4s
+        opacity: 0.35 + Math.random() * 0.25,
+      })),
+    []
+  );
 
   return (
     <div
-      ref={ref}
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 -z-10 [--x:50%] [--y:50%] overflow-hidden"
+      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
     >
-      {/* Base gradient for depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/92 to-background/88" />
-      {/* Cursor-following spotlight */}
+      {/* Fine grid overlay */}
       <div
         className="absolute inset-0"
         style={{
-          background:
-            "radial-gradient(600px circle at var(--x) var(--y), hsl(var(--primary)/0.10), transparent 40%)",
-        }}
-      />
-      {/* Soft color wash with slow rotation */}
-      <div
-        className="absolute inset-[-10%] opacity-35 blur-3xl animate-bg-move"
-        style={{
-          background:
-            "conic-gradient(from 0deg at 50% 50%, hsl(var(--brand)/0.06), hsl(var(--brand-2)/0.06), transparent 35%)",
-        }}
-      />
-      {/* Parallax dots following cursor subtly */}
-      <div
-        className="absolute inset-[-15%] opacity-25"
-        style={{
-          backgroundImage: "radial-gradient(hsl(var(--muted-foreground)/0.05) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-          transform: "translate3d(calc((var(--x) - 50%) / 18), calc((var(--y) - 50%) / 18), 0)",
-        }}
-      />
-      {/* Faint grid texture */}
-      <div
-        className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_45%,transparent_85%)]"
-        style={{
           backgroundImage:
-            "linear-gradient(to right, hsl(var(--muted-foreground)/0.05) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--muted-foreground)/0.05) 1px, transparent 1px)",
+            "linear-gradient(to right, hsl(var(--muted-foreground)/0.075) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--muted-foreground)/0.075) 1px, transparent 1px)",
           backgroundSize: "24px 24px",
+        }}
+      />
+
+      {/* Subtle flickering cells (no cursor interaction) */}
+      <div className="absolute inset-0">
+        {cells.map((c) => (
+          <div
+            key={c.id}
+            className="absolute animate-pulse"
+            style={{
+              left: `${c.left}%`,
+              top: `${c.top}%`,
+              width: `${c.size}px`,
+              height: `${c.size}px`,
+              opacity: c.opacity,
+              backgroundColor: "hsl(var(--muted-foreground)/0.12)",
+              boxShadow: "0 0 0 1px hsl(var(--muted-foreground)/0.06) inset",
+              animationDuration: "2.4s",
+              animationDelay: `${c.delay}s`,
+            }}
+          />)
+        )}
+      </div>
+
+      {/* Very soft vignette so content pops while preserving the page gradient underneath */}
+      <div
+        className="absolute inset-0"
+        style={{
+          maskImage:
+            "radial-gradient(120% 100% at 50% 50%, black 40%, transparent 100%)",
+          WebkitMaskImage:
+            "radial-gradient(120% 100% at 50% 50%, black 40%, transparent 100%)",
         }}
       />
     </div>

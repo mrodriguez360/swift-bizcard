@@ -5,6 +5,7 @@ import ProjectGrid from "@/components/portfolio/ProjectGrid";
 import { portfolio } from "@/content/portfolio";
 import { Card } from "@/components/ui/card";
 import Typewriter from "@/components/Typewriter";
+import InteractiveBackground from "@/components/InteractiveBackground";
 
 const Index = () => {
   useEffect(() => {
@@ -46,6 +47,7 @@ const Index = () => {
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-gradient-primary flex items-center justify-center">
+      <InteractiveBackground />
       <div className="w-full px-4 py-10">
         <Card className="mx-auto max-w-screen-2xl rounded-2xl glass-card shadow-[0_20px_60px_-20px_hsl(var(--brand)/0.35)] bg-[hsl(var(--card-hero))] text-[hsl(var(--card-hero-foreground))] border-[hsl(var(--border-hero))]">
           <section className="p-6 md:p-10">
