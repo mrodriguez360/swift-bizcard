@@ -4,7 +4,7 @@ import CertificationBar from "@/components/portfolio/CertificationBar";
 import ProjectGrid from "@/components/portfolio/ProjectGrid";
 import { portfolio } from "@/content/portfolio";
 import { Card } from "@/components/ui/card";
-
+import { Badge } from "@/components/ui/badge";
 import InteractiveBackground from "@/components/InteractiveBackground";
 
 const Index = () => {
@@ -68,6 +68,14 @@ const Index = () => {
                 <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
                   <CertificationBar certifications={portfolio.certifications} />
                 </div>
+                <section aria-label="Experience highlights" className="w-full animate-fade-in" style={{ animationDelay: "260ms" }}>
+                  <div className="flex flex-wrap gap-2 md:gap-3">
+                    <Badge variant="secondary" aria-label="15 plus years Splunk">15+ years Splunk</Badge>
+                    <Badge variant="secondary" aria-label="8 plus years Automation">8+ years Automation</Badge>
+                    <Badge variant="secondary" aria-label="2 plus years AI">2+ years AI</Badge>
+                    <Badge variant="secondary" aria-label="2 plus years AWS">2+ years AWS</Badge>
+                  </div>
+                </section>
                 <section aria-label="Summary" className="w-full animate-fade-in" style={{ animationDelay: "300ms" }}>
                   <p className="mt-3 text-base md:text-lg text-[hsl(var(--foreground))]">
                     {portfolio.summary}
