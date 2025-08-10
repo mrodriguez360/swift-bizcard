@@ -9,7 +9,7 @@ export default function InteractiveBackground() {
         }}
       />
 
-      {/* Repeating grid image overlay with fade to bottom-right */}
+      {/* Repeating grid image overlay with stronger fade to bottom-right */}
       <div
         className="absolute inset-0 opacity-90"
         style={{
@@ -19,9 +19,9 @@ export default function InteractiveBackground() {
           backgroundPosition: "top left",
           backgroundSize: "auto",
           WebkitMaskImage:
-            "linear-gradient(to bottom right, rgba(0,0,0,1) 15%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0) 90%)",
+            "linear-gradient(to bottom right, rgba(0,0,0,1) 8%, rgba(0,0,0,0.6) 28%, rgba(0,0,0,0.2) 48%, rgba(0,0,0,0) 62%)",
           maskImage:
-            "linear-gradient(to bottom right, rgba(0,0,0,1) 15%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0) 90%)",
+            "linear-gradient(to bottom right, rgba(0,0,0,1) 8%, rgba(0,0,0,0.6) 28%, rgba(0,0,0,0.2) 48%, rgba(0,0,0,0) 62%)",
         }}
       />
     </div>
