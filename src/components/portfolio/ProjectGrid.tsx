@@ -37,35 +37,22 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
           href={p.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative overflow-hidden rounded-xl ring-1 ring-border/60 bg-card hover:ring-ring transition-all duration-300 shadow-sm hover:shadow-lg"
-          style={{ transform: "perspective(700px)" }}
-          onMouseMove={onMove}
-          onMouseLeave={onLeave}
+          className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card/40 hover:bg-card/60 transition-all duration-300 hover:-translate-y-0.5 ring-1 ring-transparent hover:ring-ring/60"
           aria-label={`${p.title} (opens external)`}
         >
-          <img
-            src={p.image}
-            alt={`${p.title} project cover`}
-            loading="lazy"
-            className="h-36 md:h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div
-            className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity backdrop-brightness-105"
-            aria-hidden="true"
-          >
-            {/* Subtle vertical wash for a clean card feel */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-background/10 to-transparent" />
-            {/* Faint grid for structure without heaviness */}
-            <div className="absolute inset-0 opacity-60 [background-image:radial-gradient(hsl(var(--muted-foreground))/0.08_1px,transparent_1px)] [background-size:18px_18px] [background-position:0_0]" />
-            {/* Gentle top sheen */}
-            <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-foreground/5 to-transparent" />
-            {/* Delicate primary glow at the bottom edge */}
-            <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-primary/15 via-primary/5 to-transparent blur-[1.5px] mix-blend-screen" />
+          <div className="p-3">
+            <div className="relative overflow-hidden rounded-xl border border-border/60 bg-background/40">
+              <img
+                src={p.image}
+                alt={`${p.title} project cover`}
+                loading="lazy"
+                className="w-full aspect-[16/9] object-cover"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-foreground/5 to-transparent" aria-hidden="true" />
+            </div>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 p-3 flex items-end">
-            <h3 className="text-sm md:text-base font-medium text-foreground shadow-none whitespace-pre-line bg-background/60 rounded px-2 py-1 backdrop-blur-sm">
-              {p.title}
-            </h3>
+          <div className="px-3 pb-3">
+            <h3 className="text-sm md:text-base font-medium text-foreground">{p.title}</h3>
           </div>
         </a>
       ))}
