@@ -69,7 +69,7 @@ const Index = () => {
                   <CertificationBar certifications={portfolio.certifications} />
                 </div>
                 <section aria-label="Summary" className="w-full animate-fade-in" style={{ animationDelay: "300ms" }}>
-                  <p className="mt-3 text-base md:text-lg text-[hsl(var(--card-hero-foreground))]">
+                  <p className="mt-3 text-base md:text-lg text-[hsl(var(--foreground))]">
                     {portfolio.summary}
                   </p>
                 </section>
