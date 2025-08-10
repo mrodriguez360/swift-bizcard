@@ -51,6 +51,9 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 222 47% 12%;
     --sidebar-border: 215 20% 90%;
     --sidebar-ring: 221 61% 40%;
+
+    /* AI Studio style background token */
+    --ai-bg: 0 0% 0%;
   }
 
   .dark {
@@ -95,6 +98,9 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 223 30% 18%;
     --sidebar-ring: 220 88% 60%;
+
+    /* AI Studio style background token */
+    --ai-bg: 0 0% 0%;
   }
 }
 
