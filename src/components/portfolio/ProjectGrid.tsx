@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { Compass } from "lucide-react";
 import { Project } from "@/content/portfolio";
 
 interface ProjectGridProps {
@@ -31,31 +32,48 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-      {projects.map((p) => (
-        <a
-          key={p.title}
-          href={p.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card/40 hover:bg-card/60 transition-all duration-300 hover:-translate-y-0.5 ring-1 ring-transparent hover:ring-ring/60"
-          aria-label={`${p.title} (opens external)`}
-        >
-          <div className="p-3">
-            <div className="relative overflow-hidden rounded-xl border border-border/60 bg-background/40">
-              <img
-                src={p.image}
-                alt={`${p.title} project cover`}
-                loading="lazy"
-                className="w-full aspect-[16/9] object-cover"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-foreground/5 to-transparent" aria-hidden="true" />
+      {projects.map((p) => {
+        const [headingLine = "", subLine = ""] = String(p.title).split("\n");
+        const titleLine = headingLine.replace(/:$/, "");
+        return (
+          <a
+            key={p.title}
+            href={p.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseMove={onMove}
+            onMouseLeave={onLeave}
+            className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card/40 hover:bg-card/60 transition-all duration-300 hover:-translate-y-0.5 ring-1 ring-transparent hover:ring-ring/60"
+            aria-label={`${p.title} (opens external)`}
+          >
+            <div className="px-4 pt-4">
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <span className="inline-flex size-6 md:size-7 items-center justify-center rounded-md border border-border/60 bg-background/30">
+                  <Compass className="size-3.5 md:size-4" aria-hidden="true" />
+                </span>
+                <span className="text-xs md:text-sm font-medium tracking-wide">Discover</span>
+              </div>
+              <h3 className="mt-2 text-xs md:text-sm font-medium text-foreground/80">{titleLine}</h3>
+              {subLine && (
+                <p className="text-lg md:text-2xl font-semibold leading-snug text-foreground">
+                  {subLine}
+                </p>
+              )}
             </div>
-          </div>
-          <div className="px-3 pb-3">
-            <h3 className="text-sm md:text-base font-medium text-foreground">{p.title}</h3>
-          </div>
-        </a>
-      ))}
+            <div className="p-3 pt-2">
+              <div className="relative overflow-hidden rounded-xl border border-border/60 bg-background/40">
+                <img
+                  src={p.image}
+                  alt={`${p.title} project cover`}
+                  loading="lazy"
+                  className="w-full aspect-[16/9] object-cover filter grayscale contrast-110 brightness-90 saturate-0"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-foreground/10 to-transparent" aria-hidden="true" />
+              </div>
+            </div>
+          </a>
+        );
+      })}
     </div>
   );
 };
