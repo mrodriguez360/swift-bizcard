@@ -116,7 +116,7 @@ All colors MUST be HSL.
 
 /* Additional design tokens and component utilities */
 @layer base {
-  :root {
+:root {
     --brand: 234 85% 64%;
     --brand-2: 266 70% 62%;
     --brand-glow: 234 90% 72%;
@@ -125,8 +125,9 @@ All colors MUST be HSL.
     --shadow-soft: 0 10px 30px -10px hsl(var(--brand) / 0.18);
     --shadow-glow: 0 10px 40px -10px hsl(var(--brand-2) / 0.25);
     --transition-smooth: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --linkedin: 207 89% 40%;
   }
-  .dark {
+.dark {
     --brand: 234 85% 62%;
     --brand-2: 266 70% 60%;
     --brand-glow: 234 90% 72%;
@@ -135,6 +136,7 @@ All colors MUST be HSL.
     --shadow-soft: 0 10px 30px -10px hsl(var(--brand) / 0.18);
     --shadow-glow: 0 10px 40px -10px hsl(var(--brand-2) / 0.25);
     --transition-smooth: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --linkedin: 207 89% 40%;
   }
 }
 

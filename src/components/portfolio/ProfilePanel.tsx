@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Linkedin } from "lucide-react";
+
 
 interface ProfilePanelProps {
   name: string;
@@ -21,12 +20,10 @@ const ProfilePanel = ({ name, headline, image, linkedinUrl }: ProfilePanelProps)
           {headline ? (
             <p className="text-sm md:text-base text-foreground line-clamp-1 bg-background/60 rounded px-2 py-1 backdrop-blur-sm">{headline}</p>
           ) : null}
-          <Button asChild variant="hero" size="sm" aria-label="Contact on LinkedIn">
-            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
-              <Linkedin className="h-4 w-4" aria-hidden="true" />
-              <span className="sr-only">LinkedIn</span>
-            </a>
-          </Button>
+          <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-none bg-[hsl(var(--linkedin))] text-primary-foreground font-black text-[18px] md:text-[20px] leading-none" aria-label="Contact on LinkedIn">
+            <span aria-hidden="true">in</span>
+            <span className="sr-only">LinkedIn</span>
+          </a>
         </div>
       </aside>
   );
