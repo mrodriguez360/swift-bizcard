@@ -59,7 +59,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                 </p>
               )}
             </div>
-            <div className="p-3 pt-2">
+            <div className="p-3 pt-2 mt-auto">
               <div className="relative overflow-hidden rounded-xl border border-border/60 bg-background/40">
                 <img
                   src={p.image}
