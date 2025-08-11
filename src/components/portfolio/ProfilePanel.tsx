@@ -22,8 +22,9 @@ const ProfilePanel = ({ name, headline, image, linkedinUrl }: ProfilePanelProps)
             <p className="text-sm md:text-base text-foreground line-clamp-1 bg-background/60 rounded px-2 py-1 backdrop-blur-sm">{headline}</p>
           ) : null}
           <Button asChild variant="hero" size="sm" aria-label="Contact on LinkedIn">
-            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
-              <Linkedin /> LinkedIn
+            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
+              <Linkedin className="h-4 w-4" aria-hidden="true" />
+              <span className="sr-only">LinkedIn</span>
             </a>
           </Button>
         </div>
