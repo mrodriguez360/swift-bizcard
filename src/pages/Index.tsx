@@ -51,7 +51,7 @@ const Index = () => {
       <div className="relative z-10 w-full px-4 py-10">
         <header className="mx-auto max-w-screen-2xl text-center mb-6 md:mb-8 animate-fade-in" style={{ animationDelay: "60ms" }}>
           <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-foreground">{portfolio.name}</h1>
-          <p className="mt-2 text-base md:text-lg text-muted-foreground">{portfolio.headline}</p>
+          <p className="mt-2 text-xl md:text-2xl text-muted-foreground">I build intelligent automation and decisioning that amplify human expertise.</p>
         </header>
         <Card className="mx-auto max-w-screen-2xl rounded-2xl glass-card shadow-[0_20px_60px_-20px_hsl(var(--brand)/0.35)] bg-[hsl(var(--background)/0.5)] text-[hsl(var(--foreground))] border-[hsl(var(--border)/0.35)]">
           <section className="p-6 md:p-10">
