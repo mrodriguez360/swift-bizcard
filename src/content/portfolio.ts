@@ -26,7 +26,7 @@ export const portfolio = {
   linkedinUrl: "https://www.linkedin.com/in/mrodriguez360/",
   profileImage: profileImg as string,
   summary:
-    "Results-driven AI-Powered Automation Architect with 15+ years of experience revolutionizing enterprise operations through intelligent, data-driven solutions. I specialize in transforming complex operational challenges into scalable AI-enhanced systems that deliver measurable business outcomes.",
+    "Results-driven AI-Powered Automation Architect with 15+ years of experience revolutionizing enterprise operations through intelligent, data-driven solutions. I specialize in transforming complex operational challenges into scalable AI-enhanced systems that deliver measurable business outcomes.\n\nMy expertise lies at the intersection of artificial intelligence and enterprise operations, where I architect solutions that don't just automate processes but make them truly intelligent. I've built automation platforms like Unified Monitoring that have operated continuously for over a decade, saving organizations 600+ hours monthly while reducing Mean Time to Resolution from hours to seconds.",
   certifications: [
     { title: "AWS Certified Solutions Architect – Associate", href: "https://www.credly.com/badges/ce2a040c-8fe2-4eea-a569-41ff0341df77/public_url", image: "/lovable-uploads/4d25aeeb-6c46-4cf2-9f07-c8c5cb59842f.png" as string },
     { title: "AWS AI Practitioner", href: "https://www.credly.com/badges/be75596a-3e34-4e76-8f21-e8036de94d92/public_url", image: "/lovable-uploads/d2c49c1c-dbe3-4f3e-8938-4caadd91f121.png" as string },
