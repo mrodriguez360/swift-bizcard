@@ -72,9 +72,11 @@ const Index = () => {
                   <ExperienceHighlights />
                 </section>
                 <section aria-label="Summary" className="w-full animate-fade-in" style={{ animationDelay: "300ms" }}>
-                  <p className="mt-3 text-base md:text-lg text-[hsl(var(--foreground))]">
-                    {portfolio.summary}
-                  </p>
+                  {portfolio.summary.split(/\n{2,}/).map((para, idx) => (
+                    <p key={idx} className="mt-3 text-base md:text-lg text-[hsl(var(--foreground))]">
+                      {para}
+                    </p>
+                  ))}
                 </section>
               </article>
             </div>
