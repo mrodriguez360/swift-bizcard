@@ -24,8 +24,8 @@ const ExperienceHighlights: React.FC = () => {
               aria-label={`${it.number} years experience in ${it.area}`}
             >
               <div className="flex items-center gap-3 rounded-xl backdrop-blur-md px-3 py-2 md:px-4 md:py-3 shadow-sm transition-all duration-200 focus-within:ring-2 focus-within:ring-primary/40 hover:ring-2 hover:ring-primary/40">
-                <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border border-border bg-accent/30 text-foreground ring-1 ring-primary/30 shadow-sm transition-transform duration-200 group-hover:scale-105">
-                  <span className="text-base md:text-lg font-bold leading-none tracking-tight">
+                <div className="flex h-12 w-12 md:h-16 md:w-16 items-center justify-center rounded-full border border-border bg-accent/30 text-foreground ring-1 ring-primary/30 shadow-sm transition-transform duration-200 group-hover:scale-105">
+                  <span className="text-xl md:text-2xl font-bold leading-none tracking-tight">
                     {it.number}
                   </span>
                 </div>
